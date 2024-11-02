@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'com.gradleup.shadow' version '8.3.4'
+}
+
+group = 'net.ohnonick2'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.11.0'
+    implementation 'org.jetbrains:annotations:22.0.0'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+shadowJar {
+    archiveBaseName.set('APIWarpPlugin')
+    archiveVersion.set(version)
+}
