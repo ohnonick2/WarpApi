@@ -1,9 +1,13 @@
 package net.ohnonick2.warpapi.warp;
 
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import net.ohnonick2.warpapi.FileManger;
 import org.jetbrains.annotations.NotNull;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 public class WarpManager {
@@ -11,9 +15,9 @@ public class WarpManager {
     private FileManger fileManger;
 
 
-    public WarpManager() {
+    public WarpManager(String path) {
 
-        fileManger = new FileManger("plugins/WarpPlugin/warps/");
+        fileManger = new FileManger(path);
 
     }
 
@@ -65,6 +69,35 @@ public class WarpManager {
         return fileManger.existFile(name + ".json");
     }
 
+    /**
+     * @return Warp
+     * if result is null, the warp does not exist
+     */
+    public List<Warp> getWarps() {
+
+        File[] files = fileManger.getFiles();
+
+        if (files == null) {
+            return null;
+        }
+
+        List<Warp> warps = new ArrayList<>();
+
+        for (File file : files) {
+            String name = file.getName().replace(".json", "");
+
+            JsonObject warpJson = new JsonObject();
+
+            try {
+                warpJson = JsonParser.parseString(fileManger.readFile(name + ".json")).getAsJsonObject();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        return warps;
+    }
 
 
     private boolean save(@NotNull Warp warp) {
@@ -87,7 +120,7 @@ public class WarpManager {
 
 
 
-    private class Warp {
+    public class Warp {
         private String name;
         private String world;
         private double x;

@@ -4,6 +4,7 @@ import net.ohnonick2.warpapi.error.FileCreationException;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class FileManger {
 
@@ -62,6 +63,16 @@ public class FileManger {
     }
 
     /**
+     * Liest den Inhalt einer Datei.
+     *
+     * @return Der Inhalt der Datei, wenn die Datei existiert, ansonsten null.
+     */
+    public File[] getFiles() {
+        File file = new File(path);
+        return file.listFiles();
+    }
+
+    /**
      * Löscht eine Datei.
      *
      * @param filename Der Name der zu löschenden Datei.
@@ -101,5 +112,37 @@ public class FileManger {
 
         File file = new File(path + filename);
         return file.exists();
+    }
+
+    /** Reads a file from the resources folder.
+     *
+     * @param path The path to the file.
+     * @return The content of the file.
+     */
+    public String readFile(String path) {
+        File file = new File(path);
+        if (!file.exists()) {
+            return null;
+        }
+
+        if (!file.canRead()) {
+            return null;
+        }
+
+        InputStream inputStream = getClass().getResourceAsStream(path);
+        StringBuilder stringBuilder = new StringBuilder();
+        byte[] buffer = new byte[1024];
+        int bytesRead;
+        try {
+            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                stringBuilder.append(new String(buffer, 0, bytesRead));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return stringBuilder.toString();
+
+
     }
 }
