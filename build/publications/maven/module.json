@@ -1,0 +1,136 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.ohnonick2",
+    "module": "APIWarpPlugin",
+    "version": "1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.8"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "APIWarpPlugin-1.0-SNAPSHOT.jar",
+          "url": "APIWarpPlugin-1.0-SNAPSHOT.jar",
+          "size": 5769,
+          "sha512": "726ec482c0718ac15c348e6f4a97f9868f03b104a749ea990cb1846262d351a90bf6c79224641d278f00699a1f383a9df1d522d4e36d87dc90ad297f0e7328ea",
+          "sha256": "5a80931fa41ec7b2cb7263ff5cf884ab029377b41502da09a6ae9fa3c9aa33eb",
+          "sha1": "06dff30ce6626146f2dba7a158d94ffb5ba07a68",
+          "md5": "77373258247da5e637385a93312da9d7"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "22.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "APIWarpPlugin-1.0-SNAPSHOT.jar",
+          "url": "APIWarpPlugin-1.0-SNAPSHOT.jar",
+          "size": 5769,
+          "sha512": "726ec482c0718ac15c348e6f4a97f9868f03b104a749ea990cb1846262d351a90bf6c79224641d278f00699a1f383a9df1d522d4e36d87dc90ad297f0e7328ea",
+          "sha256": "5a80931fa41ec7b2cb7263ff5cf884ab029377b41502da09a6ae9fa3c9aa33eb",
+          "sha1": "06dff30ce6626146f2dba7a158d94ffb5ba07a68",
+          "md5": "77373258247da5e637385a93312da9d7"
+        }
+      ]
+    },
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "APIWarpPlugin-1.0-SNAPSHOT-all.jar",
+          "url": "APIWarpPlugin-1.0-SNAPSHOT-all.jar",
+          "size": 343750,
+          "sha512": "85fe5999320c8a26215706f85f9a7c9413e3ca65591bd71824999d1db89962d18596df03f57c8d5cb0f756a309baa92b45834d4dadaf45da5d1c7ea5352a25a5",
+          "sha256": "5481e89f97777430fb35788a6ce1cc420119c5e3f80abc29c0b67c8a557d1266",
+          "sha1": "9b7eb8b565b7da767adba7d3bb9aaaaf30ed4408",
+          "md5": "8c41daa0415ab763be0a2443fdf9b1fd"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "APIWarpPlugin-1.0-SNAPSHOT-sources.jar",
+          "url": "APIWarpPlugin-1.0-SNAPSHOT-sources.jar",
+          "size": 3346,
+          "sha512": "158831e244565d44df23deb381f1e6bddd83f074dc43fcf0838d49a1b9bebf50f303a0d4e596838d97e1f28e9c458a403cc5da01add96fcb3b4038f928ede874",
+          "sha256": "118e72f7680f1f3bce57b6f851b280ac0d4bb311117223e9d6a3898fb075191a",
+          "sha1": "5cdb1cec79e36d6dc6c5a69ced65769c7aea2838",
+          "md5": "68535086bde1ba8e35b34d1485a7ac27"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "APIWarpPlugin-1.0-SNAPSHOT-javadoc.jar",
+          "url": "APIWarpPlugin-1.0-SNAPSHOT-javadoc.jar",
+          "size": 88671,
+          "sha512": "3d4b23475008ed44f6f5c33d496c8f3a34bf4cd3693331b5f1d64d93933e0d49fbeebf94f5c4e30bec9f80da8486291b6b3318605833c94064c8b4e34ce3da36",
+          "sha256": "1a9183c4071b5df923165a182c960e07ce141ea75e36d84be6a2c69c9c97cbb5",
+          "sha1": "4647b89052377aaabd340ba1620861d212a29b44",
+          "md5": "eebae22b63e946e65454d10b49bff062"
+        }
+      ]
+    }
+  ]
+}

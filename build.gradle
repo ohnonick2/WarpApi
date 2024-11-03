@@ -39,6 +39,6 @@ shadowJar {
 }
 
 wrapper {
-    gradleVersion = '8.8'
+    gradleVersion = '17.0'
     distributionType = Wrapper.DistributionType.ALL
 }
