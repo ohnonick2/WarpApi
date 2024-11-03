@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"net.ohnonick2.warpapi.error","l":"FileCreationException"},{"p":"net.ohnonick2.warpapi","l":"FileManger"},{"p":"net.ohnonick2.warpapi.warp","l":"WarpManager"}];updateSearchResults();

@@ -1,9 +1,0 @@
--classpath 'C:\\Users\\meyer\\Documents\\Coding\\Coding Privat\\APIWarpPlugin\\build\\classes\\java\\main;C:\\Users\\meyer\\Documents\\Coding\\Coding Privat\\APIWarpPlugin\\build\\resources\\main;C:\\Users\\meyer\\.gradle\\caches\\modules-2\\files-2.1\\com.google.code.gson\\gson\\2.11.0\\527175ca6d81050b53bdd4c457a6d6e017626b0e\\gson-2.11.0.jar;C:\\Users\\meyer\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains\\annotations\\22.0.0\\fb9bebc90794c7602e73d6ed0cb165a0c650be62\\annotations-22.0.0.jar;C:\\Users\\meyer\\.gradle\\caches\\modules-2\\files-2.1\\com.google.errorprone\\error_prone_annotations\\2.27.0\\91b2c29d8a6148b5e2e4930f070d4840e2e48e34\\error_prone_annotations-2.27.0.jar'
--d 'C:\\Users\\meyer\\Documents\\Coding\\Coding Privat\\APIWarpPlugin\\build\\docs\\javadoc'
--doctitle 'APIWarpPlugin 1.0-SNAPSHOT API'
--notimestamp 
--quiet 
--windowtitle 'APIWarpPlugin 1.0-SNAPSHOT API'
-'C:\\Users\\meyer\\Documents\\Coding\\Coding Privat\\APIWarpPlugin\\src\\main\\java\\net\\ohnonick2\\warpapi\\error\\FileCreationException.java'
-'C:\\Users\\meyer\\Documents\\Coding\\Coding Privat\\APIWarpPlugin\\src\\main\\java\\net\\ohnonick2\\warpapi\\FileManger.java'
-'C:\\Users\\meyer\\Documents\\Coding\\Coding Privat\\APIWarpPlugin\\src\\main\\java\\net\\ohnonick2\\warpapi\\warp\\WarpManager.java'
